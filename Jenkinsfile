@@ -11,6 +11,7 @@ node('flipkart-node')
 		      {
 			sh "${mavenHome}/bin/mvn clean package"     
 		      }
+   /*			   
 		   stage("ExecuteSonarQubeReport")
 		      {
 		        sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -35,4 +36,4 @@ emailext body: '''Build Over.
 Regards
 Suneetha''', subject: 'Build Over.', to: 'suneetha1155@gmail.com'
 }
-	            }
+*/	            }
